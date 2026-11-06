@@ -42,3 +42,9 @@ target/
 .idea/
 *.iml
 .env
+
+# Google OAuth credentials
+src/main/resources/credentials.json
+
+# OAuth tokens
+tokens/
