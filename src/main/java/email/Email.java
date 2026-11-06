@@ -20,7 +20,7 @@ public class Email {
     public List<Email> getEmails() {
         List<Email> emails = new ArrayList<>();
 
-        Email email1 = new Email ("João", "joao@gmail.com", "Reunião", false);
+        Email email1 = new Email ("Joã", "joao@gmail.com", "Reunião", false);
 
         Email email2 = new Email ("Maria", "maria@gmail.com", "Pagar o spotify", true);
 
