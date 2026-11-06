@@ -1,13 +1,12 @@
-package com.emailautomation.email;
+package email;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Email {
     private String sender;
     private String emailAddress;
     private String body;
     private boolean isRead;
-
-
-    //CONSTRUTOR
 
     public Email (String sender, String emailAddress, String body, boolean isRead ) {
 
@@ -18,22 +17,18 @@ public class Email {
 
     }
 
-    //GETTERS
+    public List<Email> getEmails() {
+        List<Email> emails = new ArrayList<>();
 
-    public String getSender() {
-        return sender;
-    }
+        Email email1 = new Email ("João", "joao@gmail.com", "Reunião", false);
 
-    public String getBody() {
-        return body;
-    }
+        Email email2 = new Email ("Maria", "maria@gmail.com", "Pagar o spotify", true);
 
-    public String getEmailAddress() {
-        return emailAddress;
-    }
+        emails.add(email1);
+        emails.add(email2);
 
-    public boolean isRead() {
-        return isRead;
+        return emails;
+
     }
 }
 
